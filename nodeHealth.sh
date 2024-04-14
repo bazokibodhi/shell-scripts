@@ -10,3 +10,9 @@ set -e
 set -o pipefail
 
 ps -ef | grep amazon | awk -F" " '{echo @2}'
+
+echo "Print the  number of CPU"
+nproc
+
+echo "Print the memory"
+free -g
